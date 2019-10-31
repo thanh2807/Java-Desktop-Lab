@@ -308,6 +308,18 @@ public class NewClass extends Frame implements ActionListener, Runnable{
             if (bnt_num1.getLabel().equals("1") && bnt_num2.getLabel().equals("2") && bnt_num3.getLabel().equals("3") && bnt_num4.getLabel().equals("4")
                     && bnt_num5.getLabel().equals("5") && bnt_num6.getLabel().equals("6") && bnt_num7.getLabel().equals("7") && bnt_num8.getLabel().equals("8")) {
                     JOptionPane.showMessageDialog(this, "Congratulations! You won.");
+                    //restart game
+                    Time = 0;
+                    count = 0;
+                    Ramdom3x3();
+            }
+            if (bnt_num1.getLabel().equals("1") && bnt_num2.getLabel().equals("2") && bnt_num3.getLabel().equals("3") && bnt_num4.getLabel().equals("4")
+                    && bnt_num5.getLabel().equals("5") && bnt_num6.getLabel().equals("6") && bnt_num7.getLabel().equals("8") && bnt_num8.getLabel().equals("7")) {
+                    JOptionPane.showMessageDialog(this, "Random have error! Play again?");
+                    //restart game
+                    Time = 0;
+                    count = 0;
+                    Ramdom3x3();
             }
             //action for 4x4 matrix
         } else {
@@ -553,10 +565,14 @@ public class NewClass extends Frame implements ActionListener, Runnable{
             }
              //if all of buttons are right their location
             if (bnt_num1.getLabel().equals("1") && bnt_num2.getLabel().equals("2") && bnt_num3.getLabel().equals("3") && bnt_num10.getLabel().equals("4")
-                    && bnt_num4.getLabel().equals("5") && bnt_num5.getLabel().equals("6") && bnt_num6.getLabel().equals("7") && bnt_num11.getLabel().equals("8")
-                    && bnt_num7.getLabel().equals("9") && bnt_num8.getLabel().equals("10") && bnt_num9.getLabel().equals("11") && bnt_num12.getLabel().equals("12")
-                    && bnt_num13.getLabel().equals("13") && bnt_num14.getLabel().equals("14") && bnt_num15.getLabel().equals("15")) {
+                && bnt_num4.getLabel().equals("5") && bnt_num5.getLabel().equals("6") && bnt_num6.getLabel().equals("7") && bnt_num11.getLabel().equals("8")
+                && bnt_num7.getLabel().equals("9") && bnt_num8.getLabel().equals("10") && bnt_num9.getLabel().equals("11") && bnt_num12.getLabel().equals("12")
+                && bnt_num13.getLabel().equals("13") && bnt_num14.getLabel().equals("14") && bnt_num15.getLabel().equals("15")) {
                 JOptionPane.showMessageDialog(this, "Congratulations! You won.");
+                //restart game
+                Time = 0;
+                count = 0;
+                Ramdom4x4();
             }
         }
     }
